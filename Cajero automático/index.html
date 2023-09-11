@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Estilos.CSS">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <title>Document</title>
+    <title>Cajero automático</title>
 </head>
 
 <body>
@@ -22,52 +22,22 @@
             <h3>David Otoniel Driotis</h3>
 
         </div>
-        <div id="botones">
+        <div class="botones">
             <button onclick="depositar()">1- Depositar</button>
             <br>
             <br>
             <button onclick="retirar()">2- Retirar</button>
             <br>
             <br>
-            <button>3- Consultar saldo</button>
+            <button onclick="consultarSaldo()">3- Consultar saldo</button>
             <br>
             <br>
             <button>4- Pagar servicios</button>
             <br>
             <br>
         </div>
-        <form class="centrar">
-            <div class="form-group content-number">
-                <div class="row block-number">
-                    <input id="pin"  class="form-control col-md-7 col-sm-6 m-2 text-center" type="password" name="password" disabled>
-                 </div>
-                 <br>
-                 <br>
-                <div>
-                    <input id="number" class="btn-number" type="button" value="1" onclick="getNumber(value);">
-                    <input id="number" class="btn-number" type="button" value="2" onclick="getNumber(value);">
-                    <input id="number" class="btn-number" type="button" value="3" onclick="getNumber(value);">
-                </div>
-                <div>
-                    <input id="number" class="btn-number" type="button" value="4" onclick="getNumber(value);">
-                    <input id="number" class="btn-number" type="button" value="5" onclick="getNumber(value);">
-                    <input id="number" class="btn-number" type="button" value="6" onclick="getNumber(value);">
-                </div>
-                <div>
-                    <input id="number" class="btn-number" type="button" value="7" onclick="getNumber(value);">
-                    <input id="number" class="btn-number" type="button" value="8" onclick="getNumber(value);">
-                    <input id="number" class="btn-number" type="button" value="9" onclick="getNumber(value);">
-                </div>
-                <div>
-                    <input id="borrar" class="btn-opcion" type="button" value="borrar" onclick="limpiarInputs();">
-                    <input id="number" class="btn-number" type="button" value="0" onclick="getNumber(value);">
-                    <input id="ingresar" class="btn-opcion" type="button" value="Siguiente" onclick="Ingresar();">
-                </div>
-            </div>
-        </form>
         <br>
         <br>
-        <a class="cerrarSesion" href="/Login.html">Cerrar sesión</a>
     </div>
 
 <div class="centrar">

@@ -1,5 +1,23 @@
+document.getElementById("loginForm").addEventListener("submit", function(event) {
+  event.preventDefault(); // Evitar envío del formulario por defecto
+
+  // Obtener los valores ingresados por el usuario
+  var username = document.getElementById("username").value;
+  var password = document.getElementById("password").value;
+
+  // Verificar si el nombre de usuario y la contraseña son válidos
+  if (username === "Ash Ketchum" && password === "1234") {
+      // Iniciar sesión exitosa, redirigir a la página principal
+      window.location.href = "index.html";
+  } else {
+      // Mostrar mensaje de error
+      alert("Nombre de usuario o contraseña incorrectos. Por favor, inténtelo nuevamente.");
+  }
+});
+
+
 // Obtener el elemento de la lista
-var lista = document.getElementById("registro-lista");
+/*var lista = document.getElementById("registro-lista");
 
 // Datos de ejemplo para los registros (puedes reemplazar esto con tus propios datos)
 var registros = [
@@ -20,7 +38,7 @@ registros.forEach(function(registro) {
   li.appendChild(titulo);
   li.appendChild(descripcion);
   lista.appendChild(li);
-});
+});*/
 
 let saldoInicial = 0.00;
 

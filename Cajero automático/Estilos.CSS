@@ -156,6 +156,7 @@ input[type="submit"]:hover{
     text-align: center;
     font-size: 16px;
     color: black;
+    background: #6c3483;
 }
 
 .registrarse a{
@@ -192,7 +193,7 @@ input[type="submit"]:hover{
     text-align: center;
 }
 
-#botones {
+.botones {
     justify-content: center;
     margin-top: 20px;
     text-align: center;

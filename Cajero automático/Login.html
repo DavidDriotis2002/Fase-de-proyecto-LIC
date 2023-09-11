@@ -6,30 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Estilos.CSS">
-    link
     <title>Login de usuario</title>
 </head>
 
 <body>
     <div class="formulario">
         <h1>Inicio de sesión</h1>
-        <form method="post">
+        <form id="loginForm">
             <div class="nombreUsuario">
-                <input type="text" required>
+                <input type="text" id="username" required>
                 <label>Nombre de usuario</label>
             </div>
             <div class="contrasena">
-                <input type="password" required>
+                <input type="password" id="password" required>
                 <label>Contraseña</label>
             </div>
-            <div class="recordar">¿olvido su contraseña?</div>
-            <input type="submit" value="Iniciar">
-            <a href="/index.html">mandar a menú principal</a>
-            <div class="registrarse">
-                quiero hacer el <a href="#">registro</a>
-            </div>
+            <button class="registrarse" type="submit">Iniciar</button>
         </form>
     </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
